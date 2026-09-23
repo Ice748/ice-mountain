@@ -1,2 +1,33 @@
-# ice-mountain
-A cozy 2D platformer about a little ice cube climbing a frozen mountain to rescue his best friend, a cat named Viby.
+<div align="center">
+
+# Ice Mountain
+A cozy 2D platformer about a little ice cube climbing a frozen mountain  
+to rescue his best friend, a cat named Viby.
+
+</div>
+
+---
+
+## Story
+Zomy is a small ice cube living at the foot of Ice Mountain.  
+His best friend is a cat named Viby.
+
+One night, Ice Pirates steal Viby and take him to the top of the mountain.  
+Zomy wakes up, notices that Viby is missing, and finds a single toy fish in the snow.  
+
+He picks it up, looks up, and starts climbing.
+
+## Screenshots
+Coming soon...
+
+---
+
+## Tech Stack
+- Game Engine: Godot
+- Art: MS Paint
+
+---
+
+## License
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.

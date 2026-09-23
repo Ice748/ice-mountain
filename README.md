@@ -19,3 +19,9 @@ He picks it up, looks up, and starts climbing.
 
 ## Screenshots
 Coming soon...
+
+---
+
+## Tech Stack
+- Game Engine: Godot
+- Art: MS Paint

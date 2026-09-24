@@ -1,0 +1,160 @@
+[gd_scene load_steps=17 format=3 uid="uid://pbc3dufpu2cb"]
+
+[ext_resource type="Script" uid="uid://ydi6gl82fu5m" path="res://scripts/menu.gd" id="1_vjb58"]
+[ext_resource type="Texture2D" uid="uid://b2y5arqmn5mas" path="res://assets/sprites/ice-mountain-logo.png" id="1_yqeox"]
+[ext_resource type="Script" uid="uid://ddvo67ps4o3yf" path="res://scripts/menu_screen.gd" id="3_con2f"]
+[ext_resource type="Texture2D" uid="uid://cl5w8jiiyjkk5" path="res://assets/sprites/zomy.png" id="4_4ytvr"]
+[ext_resource type="Texture2D" uid="uid://drbmc107ka0yl" path="res://assets/sprites/viby.png" id="5_g3eks"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mhnvy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ytvr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g3eks"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v86rl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_13sgg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i6lef"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70i5f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mj5lg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ufwb2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6cdou"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i42df"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_vjb58")
+
+[node name="Screen" type="Node2D" parent="."]
+
+[node name="StartScreen" type="Node2D" parent="Screen"]
+
+[node name="Logo" type="Sprite2D" parent="Screen/StartScreen"]
+position = Vector2(144, -81)
+texture = ExtResource("1_yqeox")
+
+[node name="Label" type="Label" parent="Screen/StartScreen"]
+visible = false
+offset_top = -12.0
+offset_right = 288.0
+theme_override_font_sizes/font_size = 8
+text = "Press any key to start!"
+horizontal_alignment = 1
+
+[node name="MenuScreen" type="Node2D" parent="Screen"]
+script = ExtResource("3_con2f")
+
+[node name="Zomy" type="Sprite2D" parent="Screen/MenuScreen"]
+modulate = Color(1, 1, 1, 0.501961)
+position = Vector2(80, -226)
+rotation = -0.13805
+texture = ExtResource("4_4ytvr")
+
+[node name="Viby" type="Sprite2D" parent="Screen/MenuScreen"]
+modulate = Color(1, 1, 1, 0.501961)
+position = Vector2(200, -249)
+rotation = 0.234766
+texture = ExtResource("5_g3eks")
+
+[node name="StartButton" type="Button" parent="Screen/MenuScreen"]
+offset_top = -286.0
+offset_right = 288.0
+offset_bottom = -266.0
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mhnvy")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4ytvr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3eks")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v86rl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_13sgg")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_i6lef")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_70i5f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_mj5lg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ufwb2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6cdou")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i42df")
+text = "Start"
+
+[node name="SettingsButton" type="Button" parent="Screen/MenuScreen"]
+offset_top = -264.0
+offset_right = 288.0
+offset_bottom = -244.0
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mhnvy")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4ytvr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3eks")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v86rl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_13sgg")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_i6lef")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_70i5f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_mj5lg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ufwb2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6cdou")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i42df")
+text = "Settings"
+
+[node name="CreditsButton" type="Button" parent="Screen/MenuScreen"]
+offset_top = -242.0
+offset_right = 288.0
+offset_bottom = -222.0
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mhnvy")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4ytvr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3eks")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v86rl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_13sgg")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_i6lef")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_70i5f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_mj5lg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ufwb2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6cdou")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i42df")
+text = "Credits"
+
+[node name="ExitButton" type="Button" parent="Screen/MenuScreen"]
+offset_top = -220.0
+offset_right = 288.0
+offset_bottom = -200.0
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mhnvy")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4ytvr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3eks")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v86rl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_13sgg")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_i6lef")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_70i5f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_mj5lg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ufwb2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6cdou")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i42df")
+text = "Exit"
+
+[node name="WhiteScreen" type="ColorRect" parent="."]
+offset_right = 288.0
+offset_bottom = 162.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="BlackScreen" type="ColorRect" parent="."]
+offset_right = 288.0
+offset_bottom = 162.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="button_down" from="Screen/MenuScreen/StartButton" to="Screen/MenuScreen" method="_on_start_button_button_down"]
+[connection signal="mouse_entered" from="Screen/MenuScreen/StartButton" to="Screen/MenuScreen" method="_on_start_button_mouse_entered"]
+[connection signal="mouse_exited" from="Screen/MenuScreen/StartButton" to="Screen/MenuScreen" method="_on_start_button_mouse_exited"]
+[connection signal="button_down" from="Screen/MenuScreen/SettingsButton" to="Screen/MenuScreen" method="_on_settings_button_button_down"]
+[connection signal="mouse_entered" from="Screen/MenuScreen/SettingsButton" to="Screen/MenuScreen" method="_on_settings_button_mouse_entered"]
+[connection signal="mouse_exited" from="Screen/MenuScreen/SettingsButton" to="Screen/MenuScreen" method="_on_settings_button_mouse_exited"]
+[connection signal="button_down" from="Screen/MenuScreen/CreditsButton" to="Screen/MenuScreen" method="_on_credits_button_button_down"]
+[connection signal="mouse_entered" from="Screen/MenuScreen/CreditsButton" to="Screen/MenuScreen" method="_on_credits_button_mouse_entered"]
+[connection signal="mouse_exited" from="Screen/MenuScreen/CreditsButton" to="Screen/MenuScreen" method="_on_credits_button_mouse_exited"]
+[connection signal="button_down" from="Screen/MenuScreen/ExitButton" to="Screen/MenuScreen" method="_on_exit_button_button_down"]
+[connection signal="mouse_entered" from="Screen/MenuScreen/ExitButton" to="Screen/MenuScreen" method="_on_exit_button_mouse_entered"]
+[connection signal="mouse_exited" from="Screen/MenuScreen/ExitButton" to="Screen/MenuScreen" method="_on_exit_button_mouse_exited"]

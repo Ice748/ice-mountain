@@ -11,5 +11,19 @@ config_version=5
 [application]
 
 config/name="Ice Mountain"
+run/main_scene="uid://pbc3dufpu2cb"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=288
+window/size/viewport_height=162
+window/size/window_width_override=1152
+window/size/window_height_override=648
+window/stretch/mode="viewport"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.101961, 0.164706, 0.290196, 1)

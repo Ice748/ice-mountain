@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://hm2wp8je8f4p"]
+
+[ext_resource type="Texture2D" uid="uid://b2y5arqmn5mas" path="res://assets/sprites/ice-mountain-logo.png" id="1_0bpdh"]
+
+[node name="Credits" type="Node2D"]
+
+[node name="BlackScreen" type="ColorRect" parent="."]
+offset_right = 288.0
+offset_bottom = 162.0
+color = Color(0, 0, 0, 1)
+
+[node name="Credits" type="Node2D" parent="."]
+
+[node name="LogoScreen" type="ColorRect" parent="Credits"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 17.0
+offset_right = 288.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101961, 0.164706, 0.290196, 1)
+
+[node name="Logo" type="Sprite2D" parent="Credits/LogoScreen"]
+position = Vector2(144, 64)
+texture = ExtResource("1_0bpdh")
+
+[node name="Label" type="Label" parent="Credits"]
+offset_top = 161.0
+offset_right = 288.0
+offset_bottom = 184.0
+theme_override_font_sizes/font_size = 10
+text = "A game by
+Ice748
+
+Game engine                Godot 4
+  Art                                   MS Paint
+          Music                              Classic Guitar
+
+Thanks for playing! (:"
+horizontal_alignment = 1

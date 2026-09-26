@@ -77,7 +77,7 @@ func _on_credits_button_button_down() -> void:
 	tween.tween_property(black_screen, "color:a", 1.0, 0.5)
 	await tween.finished
 
-	# get_tree().change_scene_to_file("res://scenes/credits.tscn")
+	get_tree().change_scene_to_file("res://scenes/credits.tscn")
 #endregion
 
 #region ExitButton
